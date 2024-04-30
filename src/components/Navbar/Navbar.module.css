@@ -10,3 +10,7 @@
     justify-content: space-around;
     
 }
+.logoDiv{
+    display: flex;
+    margin: 14px;
+  }
