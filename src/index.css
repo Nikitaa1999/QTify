@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   line-height:1.5;
-  backgroud-color:var(--color-black);
+  background-color:var(--color-black);
   color: var(--color-white);
   overflow-x: hidden;
 
