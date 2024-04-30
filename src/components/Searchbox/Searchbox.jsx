@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./Searchbox.module.css";
 import {ReactComponent as SearchIcon} from "../../assets/Searchicon.svg";
-export default function Searchbox({ placeholder }){
+export default function Searchbox({ search }){
     const onSubmit = (e) => {
         e.preventDefault();
         
@@ -19,7 +19,7 @@ export default function Searchbox({ placeholder }){
         //     </form>
         // </>
         <form className={styles.wrapper}>
-      <input className={styles.search} placeholder={placeholder}></input>
+      <input className={styles.search} placeholder={search}></input>
       <button className={styles.searchButton} type="submit">
         <SearchIcon />
       </button>
