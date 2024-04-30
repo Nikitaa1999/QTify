@@ -12,7 +12,7 @@
 
 body {
   margin: 0;
-  font-family: "Poppins", san-serif;
+  font-family: "Poppins", sans-serif;
   line-height:1.5;
   backgroud-color:var(--color-black);
   color: var(--color-white);
