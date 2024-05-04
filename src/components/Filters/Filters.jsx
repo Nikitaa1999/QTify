@@ -17,6 +17,7 @@ function TabPanel(props) {
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
       {...other}
+      key={index}
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
@@ -43,9 +44,9 @@ export default function Filters ({filters, selectedFilterIndex, setSelectedFilte
 
   return (
     <div>
-            <Tabs value={selectedFilterIndex} onChange={handleChange} aria-label="basic tabs example" TabIndicatorProps={{backgroundColor: 'var(--color-primary)'}}>
+            <Tabs value={selectedFilterIndex} onChange={handleChange} aria-label="basic tabs example" TabIndicatorProps={{backgroundcolor: 'var(--color-primary)'}}>
                 {filters.map((ele, idx) => (
-                    <Tab label={ele.label} className={styles.tab} {...a11yProps(idx)} />
+                    <Tab key={idx} label={ele.label} className={styles.tab} {...a11yProps(idx)} />
                 ))}
             </Tabs>
             {filters.map((ele, idx) => (

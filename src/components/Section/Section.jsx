@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Section.module.css"
-import { CircularProgress, Tab, Tabs } from "@mui/material";
+import { CircularProgress } from "@mui/material";
 import Card from "../Card/Card";
 import Carousel from "../Carousel/Carousel";
 import Filters from "../Filters/Filters";
